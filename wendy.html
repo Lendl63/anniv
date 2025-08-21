@@ -1,0 +1,1901 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>🎉 Joyeux Anniversaire Merline ! 🎂</title>
+    <style>
+        /* ===========================================
+           IMPORTATION DE POLICES GOOGLE FONTS
+        =========================================== */
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap');
+
+        /* ===========================================
+           STYLES DE BASE ET CONFIGURATION GLOBALE
+        =========================================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Désactiver le scroll pour garder tout sur une interface */
+        html, body {
+            height: 100vh;
+            overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="%23FF69B4" opacity="0.8"/><circle cx="10" cy="10" r="3" fill="white"/></svg>'), auto;
+        }
+
+        /* ===========================================
+           FOND AVEC DÉGRADÉ ANIMÉ ULTRA-VIBRANT
+        =========================================== */
+        body {
+            background: linear-gradient(45deg, 
+                #FF6B9D 0%,    /* Rose vif */
+                #4ECDC4 12%,   /* Turquoise */
+                #45B7D1 25%,   /* Bleu ciel */
+                #96CEB4 37%,   /* Vert menthe */
+                #FFEAA7 50%,   /* Jaune pastel */
+                #DDA0DD 62%,   /* Violet pastel */
+                #98D8C8 75%,   /* Turquoise pastel */
+                #FFB6C1 87%,   /* Rose pastel */
+                #87CEEB 100%   /* Bleu ciel */
+            );
+            background-size: 600% 600%;
+            animation: rainbowShift 12s ease infinite;
+            position: relative;
+        }
+
+        /* Animation du dégradé arc-en-ciel */
+        @keyframes rainbowShift {
+            0% { background-position: 0% 50%; }
+            25% { background-position: 100% 0%; }
+            50% { background-position: 100% 100%; }
+            75% { background-position: 0% 100%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Overlay de brillance magique */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.3) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 70%, rgba(255, 192, 203, 0.4) 0%, transparent 50%),
+                        radial-gradient(circle at 40% 80%, rgba(147, 51, 234, 0.3) 0%, transparent 50%);
+            animation: magicShimmer 8s ease-in-out infinite;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        @keyframes magicShimmer {
+            0%, 100% { opacity: 0.7; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.1); }
+        }
+
+        /* ===========================================
+           MOTIFS DÉCORATIFS ANIMÉS ULTRA-COLORÉS
+        =========================================== */
+        .background-patterns {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 2;
+            opacity: 0.6;
+        }
+
+        .pattern {
+            position: absolute;
+            font-size: 3rem;
+            animation: floatMagic 8s ease-in-out infinite;
+            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+        }
+
+        .pattern:nth-child(1) { 
+            top: 5%; left: 5%; 
+            animation-delay: 0s; 
+            color: #FF69B4;
+            animation: floatMagic 6s ease-in-out infinite, colorShift 4s ease-in-out infinite;
+        }
+        .pattern:nth-child(2) { 
+            top: 15%; right: 10%; 
+            animation-delay: 1s; 
+            color: #4ECDC4;
+            animation: floatMagic 7s ease-in-out infinite, colorShift 5s ease-in-out infinite;
+        }
+        .pattern:nth-child(3) { 
+            bottom: 25%; left: 15%; 
+            animation-delay: 2s; 
+            color: #FFEAA7;
+            animation: floatMagic 8s ease-in-out infinite, colorShift 3s ease-in-out infinite;
+        }
+        .pattern:nth-child(4) { 
+            bottom: 15%; right: 5%; 
+            animation-delay: 3s; 
+            color: #DDA0DD;
+            animation: floatMagic 5s ease-in-out infinite, colorShift 6s ease-in-out infinite;
+        }
+        .pattern:nth-child(5) { 
+            top: 45%; left: 45%; 
+            animation-delay: 4s; 
+            color: #96CEB4;
+            animation: floatMagic 9s ease-in-out infinite, colorShift 4s ease-in-out infinite;
+        }
+        .pattern:nth-child(6) { 
+            top: 25%; left: 75%; 
+            animation-delay: 2.5s; 
+            color: #FFB6C1;
+            animation: floatMagic 6.5s ease-in-out infinite, colorShift 5.5s ease-in-out infinite;
+        }
+        .pattern:nth-child(7) { 
+            bottom: 35%; left: 65%; 
+            animation-delay: 1.5s; 
+            color: #87CEEB;
+            animation: floatMagic 7.5s ease-in-out infinite, colorShift 3.5s ease-in-out infinite;
+        }
+
+        @keyframes floatMagic {
+            0%, 100% { 
+                transform: translateY(0px) rotate(0deg) scale(1); 
+            }
+            25% { 
+                transform: translateY(-30px) rotate(90deg) scale(1.2); 
+            }
+            50% { 
+                transform: translateY(-15px) rotate(180deg) scale(0.8); 
+            }
+            75% { 
+                transform: translateY(-25px) rotate(270deg) scale(1.1); 
+            }
+        }
+
+        @keyframes colorShift {
+            0% { filter: hue-rotate(0deg) drop-shadow(0 0 10px currentColor); }
+            25% { filter: hue-rotate(90deg) drop-shadow(0 0 15px currentColor); }
+            50% { filter: hue-rotate(180deg) drop-shadow(0 0 20px currentColor); }
+            75% { filter: hue-rotate(270deg) drop-shadow(0 0 15px currentColor); }
+            100% { filter: hue-rotate(360deg) drop-shadow(0 0 10px currentColor); }
+        }
+
+        /* ===========================================
+           PARTICULES MAGIQUES FLOTTANTES
+        =========================================== */
+        .magic-particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 3;
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: radial-gradient(circle, #FFD700, #FF69B4);
+            border-radius: 50%;
+            animation: particleFloat 15s linear infinite;
+            opacity: 0.8;
+        }
+
+        @keyframes particleFloat {
+            0% {
+                transform: translateY(100vh) translateX(0) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px) translateX(200px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* ===========================================
+           CONTAINER PRINCIPAL ET STRUCTURE
+        =========================================== */
+        .container {
+            position: relative;
+            z-index: 10;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* ===========================================
+           ANIMATION DE COMPTE À REBOURS 3-2-1 ULTRA-SPECTACULAIRE
+        =========================================== */
+        .countdown-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 1;
+            transition: opacity 0.8s ease-out;
+        }
+
+        .countdown-number {
+            font-family: 'Fredoka One', cursive;
+            font-size: 15rem;
+            font-weight: bold;
+            color: white;
+            text-shadow: 
+                0 0 30px rgba(255, 255, 255, 1),
+                0 0 60px rgba(255, 192, 203, 0.8),
+                0 0 90px rgba(255, 105, 180, 0.6),
+                0 0 120px rgba(147, 51, 234, 0.4);
+            opacity: 0;
+            transform: scale(0.3);
+            position: relative;
+        }
+
+        /* Animation spécifique pour le chiffre 3 - Zoom explosif avec rotation */
+        .countdown-number.three {
+            animation: explosiveZoom 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+            background: linear-gradient(45deg, #FF6B9D, #4ECDC4, #FFEAA7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        @keyframes explosiveZoom {
+            0% {
+                opacity: 0;
+                transform: scale(0.1) rotate(-180deg);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.3) rotate(0deg);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1) rotate(0deg);
+            }
+        }
+
+        /* Animation spécifique pour le chiffre 2 - Rotation 720° avec pulsation */
+        .countdown-number.two {
+            animation: megaSpin 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+            background: linear-gradient(45deg, #DDA0DD, #96CEB4, #FFB6C1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        @keyframes megaSpin {
+            0% {
+                opacity: 0;
+                transform: rotate(0deg) scale(0.3);
+            }
+            25% {
+                opacity: 1;
+                transform: rotate(180deg) scale(1.2);
+            }
+            50% {
+                transform: rotate(360deg) scale(0.9);
+            }
+            75% {
+                transform: rotate(540deg) scale(1.1);
+            }
+            100% {
+                opacity: 1;
+                transform: rotate(720deg) scale(1);
+            }
+        }
+
+        /* Animation spécifique pour le chiffre 1 - Rebond ultra-dynamique */
+        .countdown-number.one {
+            animation: ultraBounce 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+            background: linear-gradient(45deg, #87CEEB, #FF69B4, #FFEAA7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        @keyframes ultraBounce {
+            0% {
+                opacity: 0;
+                transform: translateY(200px) scale(0.3);
+            }
+            30% {
+                opacity: 1;
+                transform: translateY(-50px) scale(1.3);
+            }
+            50% {
+                transform: translateY(20px) scale(0.9);
+            }
+            70% {
+                transform: translateY(-20px) scale(1.1);
+            }
+            85% {
+                transform: translateY(10px) scale(0.95);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* Particules d'explosion autour des chiffres */
+        .countdown-particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .countdown-particle {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            opacity: 0;
+        }
+
+        .countdown-particle.explode {
+            animation: particleExplode 1s ease-out forwards;
+        }
+
+        @keyframes particleExplode {
+            0% {
+                opacity: 1;
+                transform: scale(0);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(0) translate(var(--dx), var(--dy));
+            }
+        }
+
+        /* ===========================================
+           TITRE SCINTILLANT ULTRA-MAGIQUE
+        =========================================== */
+        .main-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, 
+                #FF6B9D, #4ECDC4, #FFEAA7, #DDA0DD, #96CEB4, #FFB6C1, #87CEEB);
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: rainbowText 3s ease-in-out infinite;
+            margin-bottom: 2rem;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: all 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            position: relative;
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+            filter: drop-shadow(0 0 20px rgba(255, 192, 203, 0.8));
+        }
+
+        .main-title.show {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        @keyframes rainbowText {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Étoiles ultra-brillantes autour du titre */
+        .star {
+            position: absolute;
+            font-size: 2rem;
+            animation: ultraTwinkle 2s ease-in-out infinite alternate;
+            filter: drop-shadow(0 0 10px currentColor);
+        }
+
+        .star:nth-child(1) { 
+            top: -30px; left: -40px; 
+            color: #FFD700; 
+            animation-delay: 0s; 
+        }
+        .star:nth-child(2) { 
+            top: -20px; right: -50px; 
+            color: #FF69B4; 
+            animation-delay: 0.5s; 
+        }
+        .star:nth-child(3) { 
+            bottom: -30px; left: 15%; 
+            color: #4ECDC4; 
+            animation-delay: 1s; 
+        }
+        .star:nth-child(4) { 
+            bottom: -20px; right: 15%; 
+            color: #DDA0DD; 
+            animation-delay: 1.5s; 
+        }
+        .star:nth-child(5) { 
+            top: 50%; left: -60px; 
+            color: #FFEAA7; 
+            animation-delay: 0.25s; 
+        }
+        .star:nth-child(6) { 
+            top: 50%; right: -60px; 
+            color: #96CEB4; 
+            animation-delay: 0.75s; 
+        }
+
+        @keyframes ultraTwinkle {
+            0% {
+                opacity: 0.3;
+                transform: scale(0.8) rotate(0deg);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1.5) rotate(180deg);
+            }
+        }
+
+        /* ===========================================
+           CONFETTIS TOMBANTS ULTRA-COLORÉS
+        =========================================== */
+        .confetti-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 5;
+        }
+
+        .confetti {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            opacity: 0.9;
+            animation: confettiFall linear infinite;
+            filter: drop-shadow(0 0 5px currentColor);
+        }
+
+        @keyframes confettiFall {
+            0% {
+                transform: translateY(-100px) rotate(0deg) scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(calc(100vh + 100px)) rotate(720deg) scale(0.5);
+                opacity: 0;
+            }
+        }
+
+        /* ===========================================
+           GÂTEAU D'ANNIVERSAIRE ULTRA-SPECTACULAIRE
+        =========================================== */
+        .cake-container {
+            margin: 2rem 0;
+            opacity: 0;
+            transform: translateY(100px) scale(0.8);
+            transition: all 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .cake-container.show {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+        .cake {
+            font-size: 5rem;
+            position: relative;
+            display: inline-block;
+            filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+            animation: cakeBounce 3s ease-in-out infinite;
+        }
+
+        @keyframes cakeBounce {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-10px) scale(1.05); }
+        }
+
+        .candles {
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+        }
+
+        .candle {
+            width: 6px;
+            height: 25px;
+            background: linear-gradient(to bottom, #F4A460, #DEB887);
+            position: relative;
+            opacity: 0.3;
+            transition: opacity 0.8s ease;
+            border-radius: 3px;
+            box-shadow: 0 0 10px rgba(244, 164, 96, 0.5);
+        }
+
+        .candle.lit {
+            opacity: 1;
+            animation: candleGlow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes candleGlow {
+            0% { box-shadow: 0 0 10px rgba(244, 164, 96, 0.5); }
+            100% { box-shadow: 0 0 20px rgba(244, 164, 96, 0.8), 0 0 30px rgba(255, 165, 0, 0.6); }
+        }
+
+        .candle.lit::after {
+            content: '';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 8px;
+            height: 8px;
+            background: radial-gradient(circle, #FFD700 20%, #FFA500 50%, #FF4500 80%);
+            border-radius: 50%;
+            animation: flameFlicker 0.8s ease-in-out infinite alternate;
+            box-shadow: 0 0 15px #FFA500, 0 0 25px #FF4500;
+        }
+
+        @keyframes flameFlicker {
+            0% {
+                transform: translateX(-50%) scale(1) rotate(-2deg);
+                box-shadow: 0 0 15px #FFA500, 0 0 25px #FF4500;
+            }
+            100% {
+                transform: translateX(-50%) scale(1.2) rotate(2deg);
+                box-shadow: 0 0 20px #FFA500, 0 0 35px #FF4500, 0 0 45px #FF6347;
+            }
+        }
+
+        /* ===========================================
+           SECTION DES VŒUX ULTRA-INTERACTIFS
+        =========================================== */
+        .wishes-section {
+            margin: 2rem 0;
+            opacity: 0;
+            transition: opacity 1.5s ease-out;
+        }
+
+        .wishes-section.show {
+            opacity: 1;
+        }
+
+        .wishes-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, #FF69B4, #4ECDC4, #FFEAA7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1.5rem;
+            animation: titlePulse 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes titlePulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.05); }
+        }
+
+        .wishes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            gap: 1.5rem;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .wish-bubble {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            font-size: 2rem;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .wish-bubble::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transform: rotate(45deg);
+            transition: all 0.6s ease;
+            opacity: 0;
+        }
+
+        .wish-bubble:hover::before {
+            opacity: 1;
+            animation: shimmer 1s ease-in-out;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+
+        .wish-bubble:hover {
+            transform: scale(1.2) rotate(5deg);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+        }
+
+        .wish-bubble.pink { 
+            background: linear-gradient(135deg, #FF69B4, #FF1493, #DC143C); 
+        }
+        .wish-bubble.blue { 
+            background: linear-gradient(135deg, #87CEEB, #4169E1, #0000CD); 
+        }
+        .wish-bubble.purple { 
+            background: linear-gradient(135deg, #DDA0DD, #8A2BE2, #4B0082); 
+        }
+        .wish-bubble.green { 
+            background: linear-gradient(135deg, #98FB98, #32CD32, #228B22); 
+        }
+        .wish-bubble.yellow { 
+            background: linear-gradient(135deg, #FFEAA7, #FFD700, #FFA500); 
+        }
+        .wish-bubble.orange { 
+            background: linear-gradient(135deg, #FFB347, #FF8C00, #FF4500); 
+        }
+
+        /* Modal ultra-stylée pour les vœux */
+        .wish-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .wish-modal.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .wish-content {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85));
+            backdrop-filter: blur(20px);
+            padding: 3rem;
+            border-radius: 25px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            transform: scale(0.5) rotate(-10deg);
+            transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .wish-content::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 192, 203, 0.2), transparent);
+            animation: modalShimmer 3s ease-in-out infinite;
+        }
+
+        @keyframes modalShimmer {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+
+        .wish-modal.show .wish-content {
+            transform: scale(1) rotate(0deg);
+        }
+
+        .wish-text {
+            font-size: 1.4rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+            line-height: 1.6;
+            position: relative;
+            z-index: 1;
+        }
+
+        .wish-author {
+            font-weight: 700;
+            color: #666;
+            font-size: 1.2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #999;
+            transition: all 0.3s ease;
+            z-index: 2;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .close-btn:hover {
+            color: #FF69B4;
+            background: rgba(255, 105, 180, 0.2);
+            transform: scale(1.1) rotate(90deg);
+        }
+
+        /* ===========================================
+           BOUTON DE PARTAGE ULTRA-SPECTACULAIRE
+        =========================================== */
+        .share-section {
+            margin-top: 2rem;
+            opacity: 0;
+            transition: opacity 1.5s ease-out;
+        }
+
+        .share-section.show {
+            opacity: 1;
+        }
+
+        .share-btn {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #FF6B9D, #4ECDC4, #FFEAA7, #DDA0DD);
+            background-size: 300% 300%;
+            animation: gradientShift 3s ease infinite;
+            color: white;
+            border: none;
+            padding: 1.5rem 3rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .share-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .share-btn:hover::before {
+            left: 100%;
+        }
+
+        .share-btn:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .share-btn:active {
+            transform: translateY(-2px) scale(1.02);
+        }
+
+        /* Explosion de confettis ultra-spectaculaire pour le bouton */
+        .explosion-particle {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        @keyframes megaExplode {
+            0% {
+                transform: scale(0) rotate(0deg);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.5) rotate(180deg);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(0) rotate(360deg) translate(var(--dx), var(--dy));
+                opacity: 0;
+            }
+        }
+
+        /* ===========================================
+           DESIGN ULTRA-RESPONSIVE
+        =========================================== */
+        @media (max-width: 768px) {
+            .countdown-number {
+                font-size: 10rem;
+            }
+            
+            .main-title {
+                font-size: 3rem;
+            }
+            
+            .wishes-grid {
+                max-width: 350px;
+                grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+            }
+            
+            .wish-bubble {
+                width: 70px;
+                height: 70px;
+                font-size: 1.8rem;
+            }
+            
+            .cake {
+                font-size: 4rem;
+            }
+            
+            .pattern {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .countdown-number {
+                font-size: 8rem;
+            }
+            
+            .main-title {
+                font-size: 2.5rem;
+            }
+            
+            .wishes-grid {
+                max-width: 280px;
+                grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+            }
+            
+            .wish-bubble {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+            }
+            
+            .cake {
+                font-size: 3.5rem;
+            }
+            
+            .pattern {
+                font-size: 1.8rem;
+            }
+            
+            .share-btn {
+                padding: 1.2rem 2.5rem;
+                font-size: 1.2rem;
+            }
+        }
+
+        /* ===========================================
+           ANIMATIONS SUPPLÉMENTAIRES ULTRA-AVANCÉES
+        =========================================== */
+        
+        /* Animation de pulsation magique */
+        @keyframes magicPulse {
+            0%, 100% { 
+                transform: scale(1); 
+                filter: brightness(1) hue-rotate(0deg); 
+            }
+            50% { 
+                transform: scale(1.05); 
+                filter: brightness(1.2) hue-rotate(180deg); 
+            }
+        }
+
+        /* Animation de rotation arc-en-ciel */
+        @keyframes rainbowSpin {
+            0% { filter: hue-rotate(0deg); }
+            100% { filter: hue-rotate(360deg); }
+        }
+
+        /* Animation de zoom pulsé */
+        @keyframes zoomPulse {
+            0%, 100% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(0.95); }
+            75% { transform: scale(1.05); }
+        }
+
+        /* ===========================================
+           CLASSES D'UTILITÉ ULTRA-AVANCÉES
+        =========================================== */
+        .hidden {
+            display: none !important;
+        }
+
+        .fade-out {
+            opacity: 0 !important;
+            visibility: hidden !important;
+            transform: scale(0.8) !important;
+        }
+
+        .ultra-glow {
+            filter: drop-shadow(0 0 20px currentColor) drop-shadow(0 0 40px currentColor);
+        }
+
+        .rainbow-border {
+            border: 3px solid;
+            border-image: linear-gradient(45deg, #FF6B9D, #4ECDC4, #FFEAA7, #DDA0DD) 1;
+            animation: rainbowSpin 3s linear infinite;
+        }
+
+        /* ===========================================
+           EFFETS SONORES VISUELS
+        =========================================== */
+        .sound-wave {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            animation: soundRipple 1s ease-out forwards;
+        }
+
+        @keyframes soundRipple {
+            0% {
+                transform: scale(0);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(3);
+                opacity: 0;
+            }
+        }
+    </style>
+
+<style>
+@keyframes flash {
+  0% { background-color: rgba(255,255,255,0.8); }
+  100% { background-color: transparent; }
+}
+.flash-overlay {
+  position:fixed; inset:0; background:transparent; z-index:9999; pointer-events:none;
+}
+.flash-active { animation: flash 0.3s ease; }
+</style>
+<div id="flash" class="flash-overlay"></div>
+
+</head>
+<body>
+    <!-- ===============================================
+         MOTIFS DÉCORATIFS D'ARRIÈRE-PLAN ULTRA-COLORÉS
+    =============================================== -->
+    <div class="background-patterns">
+        <div class="pattern">🎈</div>
+        <div class="pattern">🎊</div>
+        <div class="pattern">🎁</div>
+        <div class="pattern">🌟</div>
+        <div class="pattern">💝</div>
+        <div class="pattern">🎂</div>
+        <div class="pattern">🎉</div>
+    </div>
+
+    <!-- ===============================================
+         PARTICULES MAGIQUES FLOTTANTES
+    =============================================== -->
+    <div class="magic-particles" id="magicParticles"></div>
+
+    <!-- ===============================================
+         OVERLAY DE COMPTE À REBOURS 3-2-1 ULTRA-SPECTACULAIRE
+    =============================================== -->
+    <div class="countdown-overlay" id="countdownOverlay">
+        <div class="countdown-number" id="countdownNumber">
+            <!-- Les chiffres seront injectés ici via JavaScript -->
+        </div>
+        <div class="countdown-particles" id="countdownParticles"></div>
+    </div>
+
+    <!-- ===============================================
+         CONTAINER DE CONFETTIS TOMBANTS ULTRA-COLORÉS
+    =============================================== -->
+    <div class="confetti-container" id="confettiContainer"></div>
+
+    <!-- ===============================================
+         CONTENU PRINCIPAL DE LA PAGE
+    =============================================== -->
+    <div class="container" id="mainContainer">
+        <!-- Titre principal ultra-scintillant -->
+        <h1 class="main-title" id="mainTitle">
+            Joyeux Anniversaire,<br>Merline ! 🎉
+            <span class="star">⭐</span>
+            <span class="star">✨</span>
+            <span class="star">⭐</span>
+            <span class="star">✨</span>
+            <span class="star">🌟</span>
+            <span class="star">💫</span>
+        </h1>
+
+        <!-- Message d'anniversaire magique -->
+        <div class="birthday-message" id="birthdayMessage" style="opacity: 0; transition: all 1s ease;">
+            <p style="font-size: 1.5rem; color: white; text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); margin-bottom: 1rem; font-weight: 300;">
+                🎂 Que cette journée soit remplie de joie, de rires et de merveilleux souvenirs ! 🎂
+            </p>
+        </div>
+
+        <!-- Gâteau d'anniversaire ultra-spectaculaire -->
+        <div class="cake-container" id="cakeContainer">
+            <div class="cake">
+                🎂
+                <div class="candles" id="candles">
+                    <div class="candle"></div>
+                    <div class="candle"></div>
+                    <div class="candle"></div>
+                    <div class="candle"></div>
+                    <div class="candle"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section des vœux ultra-interactifs -->
+        <div class="wishes-section" id="wishesSection">
+            <h2 class="wishes-title">💌 Vœux d'Anniversaire Magiques 💌</h2>
+            <div class="wishes-grid">
+                <div class="wish-bubble pink" onclick="showWish('Maman', 'Joyeux anniversaire ma chérie ! Que tous tes rêves se réalisent comme par magie ! 🎈✨')">💖</div>
+                <div class="wish-bubble blue" onclick="showWish('Annick', 'Une année de plus de bonheur et d\'aventures extraordinaires ! Profite bien de ta journée spéciale ! 🎉🌟')">🎊</div>
+                <div class="wish-bubble purple" onclick="showWish('Emma', 'Tu mérites tout le meilleur au monde ! Que cette nouvelle année t\'apporte mille et une joies ! 🌟💫')">🌟</div>
+                <div class="wish-bubble green" onclick="showWish('Raphaela', 'Que cette nouvelle année t\'apporte joie, succès et plein de moments magiques ! 🍀🎁')">🍀</div>
+                <div class="wish-bubble yellow" onclick="showWish('Yves', 'Happy Birthday ! Que ta journée soit aussi brillante que ton sourire ! ✨🌈')">✨</div>
+                <div class="wish-bubble orange" onclick="showWish('Christ', 'Bon anniversaire ! Tu es une personne formidable qui mérite le plus beau des anniversaires ! 🎁🎂')">🎁</div>
+            </div>
+        </div>
+
+        <!-- Bouton de partage ultra-spectaculaire -->
+        <div class="share-section" id="shareSection">
+            <button class="share-btn" id="shareBtn" onclick="shareWishes()">
+                🎉 Partagez la Magie 🎉
+            </button>
+        </div>
+    </div>
+
+    <!-- ===============================================
+         MODAL ULTRA-STYLÉE POUR AFFICHER LES VŒUX
+    =============================================== -->
+    <div class="wish-modal" id="wishModal">
+        <div class="wish-content">
+            <span class="close-btn" onclick="closeWish()">&times;</span>
+            <div class="wish-text" id="wishText"></div>
+            <div class="wish-author" id="wishAuthor"></div>
+        </div>
+    </div>
+
+    <script>
+        // ===============================================
+        // VARIABLES GLOBALES ET CONFIGURATION ULTRA-AVANCÉE
+        // ===============================================
+        let countdownActive = true;
+        let confettiInterval;
+        let candleLightInterval;
+        let particleInterval;
+        let soundEffectsEnabled = true;
+
+        // Couleurs ultra-vibrantes pour tous les effets
+        const ultraColors = [
+            '#FF6B9D', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEAA7', 
+            '#DDA0DD', '#98D8C8', '#FFB6C1', '#87CEEB', '#FF69B4',
+            '#32CD32', '#FFD700', '#FF4500', '#8A2BE2', '#00CED1'
+        ];
+
+        // Sons simulés ultra-réalistes (console.log pour indiquer les effets sonores)
+        const playUltraSound = (type, intensity = 'normal') => {
+            const soundWave = document.createElement('div');
+            soundWave.className = 'sound-wave';
+            soundWave.style.position = 'fixed';
+            soundWave.style.top = '50%';
+            soundWave.style.left = '50%';
+            soundWave.style.transform = 'translate(-50%, -50%)';
+            soundWave.style.zIndex = '999';
+            document.body.appendChild(soundWave);
+            
+            setTimeout(() => {
+                if (soundWave.parentNode) {
+                    soundWave.parentNode.removeChild(soundWave);
+                }
+            }, 1000);
+
+            switch(type) {
+                case 'countdown':
+                    
+                    break;
+                case 'bell':
+                    
+                    break;
+                case 'drum':
+                    
+                    break;
+                case 'birthday':
+                    
+                    break;
+                case 'explosion':
+                    
+                    break;
+                case 'magic':
+                    
+                    break;
+            }
+        };
+
+        // ===============================================
+        // SYSTÈME DE PARTICULES MAGIQUES ULTRA-AVANCÉ
+        // ===============================================
+        const createMagicParticles = () => {
+            const particlesContainer = document.getElementById('magicParticles');
+            
+            for (let i = 0; i < 5; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + 'vw';
+                particle.style.backgroundColor = ultraColors[Math.floor(Math.random() * ultraColors.length)];
+                particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+                particle.style.animationDelay = Math.random() * 5 + 's';
+                particle.style.width = (Math.random() * 6 + 2) + 'px';
+                particle.style.height = particle.style.width;
+                
+                particlesContainer.appendChild(particle);
+                
+                // Supprimer la particule après l'animation
+                setTimeout(() => {
+                    if (particle.parentNode) {
+                        particle.parentNode.removeChild(particle);
+                    }
+                }, 20000);
+            }
+        };
+
+        // ===============================================
+        // ANIMATION DE COMPTE À REBOURS 3-2-1 ULTRA-SPECTACULAIRE
+        // ===============================================
+        const startUltraCountdown = () => {
+            const countdownOverlay = document.getElementById('countdownOverlay');
+            const countdownNumber = document.getElementById('countdownNumber');
+            const countdownParticles = document.getElementById('countdownParticles');
+            
+            const numbers = [3, 2, 1];
+            const animations = ['three', 'two', 'one'];
+            const sounds = ['countdown', 'bell', 'drum'];
+            const intensities = ['intense', 'épique', 'spectaculaire'];
+            
+            let currentIndex = 0;
+
+            const showNextNumber = () => {
+                if (currentIndex < numbers.length) {
+                    // Créer des particules d'explosion pour chaque chiffre
+                    createCountdownExplosion(countdownParticles, currentIndex);
+                    
+                    // Afficher le chiffre avec l'animation correspondante
+                    countdownNumber.textContent = numbers[currentIndex];
+                    countdownNumber.className = `countdown-number ${animations[currentIndex]}`;
+                    
+                    // Jouer le son ultra-réaliste correspondant
+                    playUltraSound(sounds[currentIndex], intensities[currentIndex]);
+                    
+                    currentIndex++;
+                    
+                    // Programmer le prochain chiffre après 1.8 secondes
+                    setTimeout(() => {
+                        if (currentIndex < numbers.length) {
+                            showNextNumber();
+                        } else {
+                            // Fin du compte à rebours, lancer la fête ultra-spectaculaire !
+                            setTimeout(() => {
+                                finishUltraCountdown();
+                            }, 1200);
+                        }
+                    }, 1800);
+                }
+            };
+
+            // Démarrer le compte à rebours après un court délai
+            setTimeout(showNextNumber, 1000);
+        };
+
+        // ===============================================
+        // CRÉATION D'EXPLOSION DE PARTICULES POUR LE COMPTE À REBOURS
+        // ===============================================
+        const createCountdownExplosion = (container, index) => {
+            const particleCount = 20 + (index * 10); // Plus de particules à chaque chiffre
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'countdown-particle';
+                particle.style.backgroundColor = ultraColors[Math.floor(Math.random() * ultraColors.length)];
+                particle.style.left = '50%';
+                particle.style.top = '50%';
+                
+                // Calculer la direction aléatoire
+                const angle = (Math.PI * 2 * i) / particleCount;
+                const distance = 150 + Math.random() * 100;
+                const dx = Math.cos(angle) * distance;
+                const dy = Math.sin(angle) * distance;
+                
+                particle.style.setProperty('--dx', dx + 'px');
+                particle.style.setProperty('--dy', dy + 'px');
+                
+                container.appendChild(particle);
+                
+                // Déclencher l'animation
+                setTimeout(() => {
+                    particle.classList.add('explode');
+                }, 100);
+                
+                // Supprimer la particule après l'animation
+                setTimeout(() => {
+                    if (particle.parentNode) {
+                        particle.parentNode.removeChild(particle);
+                    }
+                }, 1500);
+            }
+        };
+
+        // ===============================================
+        // FIN DU COMPTE À REBOURS ET DÉBUT DE LA FÊTE ULTRA-SPECTACULAIRE
+        // ===============================================
+        const finishUltraCountdown = () => {
+            const countdownOverlay = document.getElementById('countdownOverlay');
+            const mainTitle = document.getElementById('mainTitle');
+            const birthdayMessage = document.getElementById('birthdayMessage');
+            
+            // Masquer le compte à rebours avec une transition ultra-fluide
+            countdownOverlay.classList.add('fade-out');
+            countdownActive = false;
+            
+            // Jouer la symphonie d'anniversaire ultra-épique
+            playUltraSound('birthday', 'orchestral');
+            playUltraSound('magic', 'cristallin');
+            
+            setTimeout(() => {
+                countdownOverlay.classList.add('hidden');
+                
+                // Afficher le titre principal avec effet scintillant ultra-magique
+                mainTitle.classList.add('show');
+                
+                // Afficher le message d'anniversaire
+                setTimeout(() => {
+                    birthdayMessage.style.opacity = '1';
+                    birthdayMessage.style.transform = 'translateY(0)';
+                }, 500);
+                
+                // Démarrer toutes les animations festives ultra-spectaculaires
+                setTimeout(() => {
+                    showUltraCake();
+                    startUltraConfetti();
+                    showUltraWishesSection();
+                    showUltraShareSection();
+                    startMagicParticles();
+                }, 1000);
+            }, 800);
+        };
+
+        // ===============================================
+        // GESTION DU GÂTEAU ET DES BOUGIES ULTRA-SPECTACULAIRE
+        // ===============================================
+        const showUltraCake = () => {
+            const cakeContainer = document.getElementById('cakeContainer');
+            cakeContainer.classList.add('show');
+            
+            // Allumer les bougies une par une avec un délai ultra-dramatique
+            setTimeout(() => {
+                lightUltraCandles();
+            }, 800);
+        };
+
+        const lightUltraCandles = () => {
+            const candles = document.querySelectorAll('.candle');
+            let currentCandle = 0;
+            
+            candleLightInterval = setInterval(() => {
+                if (currentCandle < candles.length) {
+                    candles[currentCandle].classList.add('lit');
+                    playUltraSound('magic', 'doux');
+                    
+                    // Créer des étincelles autour de la bougie
+                    createCandleSparks(candles[currentCandle]);
+                    
+                    currentCandle++;
+                } else {
+                    clearInterval(candleLightInterval);
+                    // Toutes les bougies sont allumées, créer un effet final
+                    playUltraSound('magic', 'intense');
+                }
+            }, 1000);
+        };
+
+        // ===============================================
+        // CRÉATION D'ÉTINCELLES AUTOUR DES BOUGIES
+        // ===============================================
+        const createCandleSparks = (candle) => {
+            const rect = candle.getBoundingClientRect();
+            
+            for (let i = 0; i < 8; i++) {
+                const spark = document.createElement('div');
+                spark.style.position = 'fixed';
+                spark.style.left = rect.left + rect.width / 2 + 'px';
+                spark.style.top = rect.top + 'px';
+                spark.style.width = '3px';
+                spark.style.height = '3px';
+                spark.style.backgroundColor = '#FFD700';
+                spark.style.borderRadius = '50%';
+                spark.style.pointerEvents = 'none';
+                spark.style.zIndex = '999';
+                
+                const angle = (Math.PI * 2 * i) / 8;
+                const distance = 20 + Math.random() * 10;
+                const dx = Math.cos(angle) * distance;
+                const dy = Math.sin(angle) * distance;
+                
+                spark.style.animation = `sparkFly 1s ease-out forwards`;
+                spark.style.setProperty('--dx', dx + 'px');
+                spark.style.setProperty('--dy', dy + 'px');
+                
+                document.body.appendChild(spark);
+                
+                setTimeout(() => {
+                    if (spark.parentNode) {
+                        spark.parentNode.removeChild(spark);
+                    }
+                }, 1000);
+            }
+        };
+
+        // Animation pour les étincelles
+        const sparkFlyStyle = document.createElement('style');
+        sparkFlyStyle.textContent = `
+            @keyframes sparkFly {
+                0% {
+                    transform: translate(0, 0) scale(1);
+                    opacity: 1;
+                }
+                100% {
+                    transform: translate(var(--dx), var(--dy)) scale(0);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(sparkFlyStyle);
+
+        // ===============================================
+        // SYSTÈME DE CONFETTIS ULTRA-COLORÉS ET AVANCÉS
+        // ===============================================
+        const createUltraConfetti = () => {
+            const confettiContainer = document.getElementById('confettiContainer');
+            
+            for (let i = 0; i < 8; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.backgroundColor = ultraColors[Math.floor(Math.random() * ultraColors.length)];
+                confetti.style.animationDuration = (Math.random() * 4 + 3) + 's';
+                confetti.style.animationDelay = Math.random() * 2 + 's';
+                
+                // Formes variées pour les confettis
+                const shapes = ['50%', '0%', '20%'];
+                confetti.style.borderRadius = shapes[Math.floor(Math.random() * shapes.length)];
+                
+                // Tailles variées
+                const size = Math.random() * 8 + 6;
+                confetti.style.width = size + 'px';
+                confetti.style.height = size + 'px';
+                
+                confettiContainer.appendChild(confetti);
+                
+                // Supprimer le confetti après l'animation
+                setTimeout(() => {
+                    if (confetti.parentNode) {
+                        confetti.parentNode.removeChild(confetti);
+                    }
+                }, 8000);
+            }
+        };
+
+        const startUltraConfetti = () => {
+            // Créer des confettis ultra-colorés toutes les 200ms
+            confettiInterval = setInterval(createUltraConfetti, 200);
+        };
+
+        // ===============================================
+        // DÉMARRAGE DES PARTICULES MAGIQUES
+        // ===============================================
+        const startMagicParticles = () => {
+            // Créer des particules magiques toutes les 2 secondes
+            particleInterval = setInterval(createMagicParticles, 2000);
+            // Créer immédiatement quelques particules
+            createMagicParticles();
+        };
+
+        // ===============================================
+        // AFFICHAGE DES SECTIONS AVEC DÉLAIS ULTRA-DRAMATIQUES
+        // ===============================================
+        const showUltraWishesSection = () => {
+            setTimeout(() => {
+                const wishesSection = document.getElementById('wishesSection');
+                wishesSection.classList.add('show');
+                playUltraSound('magic', 'enchanteur');
+            }, 2000);
+        };
+
+        const showUltraShareSection = () => {
+            setTimeout(() => {
+                const shareSection = document.getElementById('shareSection');
+                shareSection.classList.add('show');
+                playUltraSound('magic', 'cristallin');
+            }, 2500);
+        };
+
+        // ===============================================
+        // GESTION DES VŒUX ULTRA-INTERACTIFS
+        // ===============================================
+        const showWish = (author, message) => {
+            const wishModal = document.getElementById('wishModal');
+            const wishText = document.getElementById('wishText');
+            const wishAuthor = document.getElementById('wishAuthor');
+            
+            wishText.textContent = message;
+            wishAuthor.textContent = `— ${author}`;
+            
+            wishModal.classList.add('show');
+            playUltraSound('magic', 'doux');
+            
+            // Créer des particules magiques autour de la modal
+            createModalMagic();
+        };
+
+        const closeWish = () => {
+            const wishModal = document.getElementById('wishModal');
+            wishModal.classList.remove('show');
+            playUltraSound('magic', 'subtil');
+        };
+
+        // ===============================================
+        // CRÉATION DE MAGIE AUTOUR DE LA MODAL
+        // ===============================================
+        const createModalMagic = () => {
+            for (let i = 0; i < 12; i++) {
+                const magic = document.createElement('div');
+                magic.style.position = 'fixed';
+                magic.style.left = '50%';
+                magic.style.top = '50%';
+                magic.style.width = '6px';
+                magic.style.height = '6px';
+                magic.style.backgroundColor = ultraColors[Math.floor(Math.random() * ultraColors.length)];
+                magic.style.borderRadius = '50%';
+                magic.style.pointerEvents = 'none';
+                magic.style.zIndex = '2001';
+                
+                const angle = (Math.PI * 2 * i) / 12;
+                const distance = 100 + Math.random() * 50;
+                const dx = Math.cos(angle) * distance;
+                const dy = Math.sin(angle) * distance;
+                
+                magic.style.animation = `modalMagic 2s ease-out forwards`;
+                magic.style.setProperty('--dx', dx + 'px');
+                magic.style.setProperty('--dy', dy + 'px');
+                
+                document.body.appendChild(magic);
+                
+                setTimeout(() => {
+                    if (magic.parentNode) {
+                        magic.parentNode.removeChild(magic);
+                    }
+                }, 2000);
+            }
+        };
+
+        // Animation pour la magie de modal
+        const modalMagicStyle = document.createElement('style');
+        modalMagicStyle.textContent = `
+            @keyframes modalMagic {
+                0% {
+                    transform: translate(-50%, -50%) scale(0);
+                    opacity: 1;
+                }
+                50% {
+                    transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(1);
+                    opacity: 1;
+                }
+                100% {
+                    transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(0);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(modalMagicStyle);
+
+        // Fermer la modal en cliquant à l'extérieur
+        document.getElementById('wishModal').addEventListener('click', (e) => {
+            if (e.target.id === 'wishModal') {
+                closeWish();
+            }
+        });
+
+        // ===============================================
+        // FONCTION DE PARTAGE ULTRA-SPECTACULAIRE AVEC EXPLOSION MAGIQUE
+        // ===============================================
+        const shareWishes = () => {
+            const shareBtn = document.getElementById('shareBtn');
+            
+            // Créer l'explosion ultra-spectaculaire de confettis autour du bouton
+            createMegaExplosion(shareBtn);
+            
+            // Jouer les sons d'explosion ultra-épiques
+            playUltraSound('explosion', 'spectaculaire');
+            setTimeout(() => playUltraSound('magic', 'intense'), 200);
+            setTimeout(() => playUltraSound('bell', 'cristallin'), 400);
+            
+            // Logique de partage ultra-avancée
+            if (navigator.share) {
+                navigator.share({
+                    title: '🎉 Joyeux Anniversaire Merline ! 🎂',
+                    text: 'Célébrons ensemble l\'anniversaire magique de Merline avec cette page interactive ultra-spectaculaire ! ✨🎈',
+                    url: window.location.href,
+                });
+            } else {
+                // Fallback ultra-stylé : copier le lien
+                navigator.clipboard.writeText(window.location.href).then(() => {
+                    // Créer une notification ultra-stylée
+                    showUltraNotification('🎉 Lien magique copié dans le presse-papiers ! Partagez la magie ! ✨');
+                }).catch(() => {
+                    showUltraNotification('🎉 Partagez cette page magique avec tous vos amis ! 🌟');
+                });
+            }
+        };
+
+        // ===============================================
+        // CRÉATION D'EXPLOSION ULTRA-SPECTACULAIRE POUR LE BOUTON
+        // ===============================================
+        const createMegaExplosion = (button) => {
+            const buttonRect = button.getBoundingClientRect();
+            const centerX = buttonRect.left + buttonRect.width / 2;
+            const centerY = buttonRect.top + buttonRect.height / 2;
+            
+            // Créer 30 particules d'explosion ultra-colorées
+            for (let i = 0; i < 30; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'explosion-particle';
+                particle.style.backgroundColor = ultraColors[Math.floor(Math.random() * ultraColors.length)];
+                particle.style.left = centerX + 'px';
+                particle.style.top = centerY + 'px';
+                particle.style.position = 'fixed';
+                particle.style.zIndex = '9999';
+                
+                // Calculer la direction aléatoire ultra-dynamique
+                const angle = (Math.PI * 2 * i) / 30;
+                const distance = 150 + Math.random() * 100;
+                const dx = Math.cos(angle) * distance;
+                const dy = Math.sin(angle) * distance;
+                
+                particle.style.setProperty('--dx', dx + 'px');
+                particle.style.setProperty('--dy', dy + 'px');
+                particle.style.animation = 'megaExplode 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards';
+                
+                // Formes variées pour les particules
+                const shapes = ['50%', '0%', '20%', '10%'];
+                particle.style.borderRadius = shapes[Math.floor(Math.random() * shapes.length)];
+                
+                document.body.appendChild(particle);
+                
+                // Supprimer la particule après l'animation
+                setTimeout(() => {
+                    if (particle.parentNode) {
+                        particle.parentNode.removeChild(particle);
+                    }
+                }, 1200);
+            }
+            
+            // Créer des ondes de choc concentriques
+            for (let i = 0; i < 3; i++) {
+                setTimeout(() => {
+                    const shockwave = document.createElement('div');
+                    shockwave.style.position = 'fixed';
+                    shockwave.style.left = centerX + 'px';
+                    shockwave.style.top = centerY + 'px';
+                    shockwave.style.width = '0px';
+                    shockwave.style.height = '0px';
+                    shockwave.style.border = '3px solid rgba(255, 255, 255, 0.6)';
+                    shockwave.style.borderRadius = '50%';
+                    shockwave.style.transform = 'translate(-50%, -50%)';
+                    shockwave.style.animation = 'shockwave 1s ease-out forwards';
+                    shockwave.style.zIndex = '9998';
+                    
+                    document.body.appendChild(shockwave);
+                    
+                    setTimeout(() => {
+                        if (shockwave.parentNode) {
+                            shockwave.parentNode.removeChild(shockwave);
+                        }
+                    }, 1000);
+                }, i * 200);
+            }
+        };
+
+        // Animation pour les ondes de choc
+        const shockwaveStyle = document.createElement('style');
+        shockwaveStyle.textContent = `
+            @keyframes shockwave {
+                0% {
+                    width: 0px;
+                    height: 0px;
+                    opacity: 1;
+                }
+                100% {
+                    width: 300px;
+                    height: 300px;
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(shockwaveStyle);
+
+        // ===============================================
+        // SYSTÈME DE NOTIFICATIONS ULTRA-STYLÉES
+        // ===============================================
+        const showUltraNotification = (message) => {
+            const notification = document.createElement('div');
+            notification.style.position = 'fixed';
+            notification.style.top = '20px';
+            notification.style.left = '50%';
+            notification.style.transform = 'translateX(-50%) translateY(-100px)';
+            notification.style.background = 'linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85))';
+            notification.style.backdropFilter = 'blur(20px)';
+            notification.style.padding = '1rem 2rem';
+            notification.style.borderRadius = '25px';
+            notification.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.3)';
+            notification.style.border = '2px solid rgba(255, 255, 255, 0.3)';
+            notification.style.color = '#333';
+            notification.style.fontWeight = '600';
+            notification.style.fontSize = '1.1rem';
+            notification.style.zIndex = '10000';
+            notification.style.transition = 'all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55)';
+            notification.textContent = message;
+            
+            document.body.appendChild(notification);
+            
+            // Animer l'apparition
+            setTimeout(() => {
+                notification.style.transform = 'translateX(-50%) translateY(0)';
+            }, 100);
+            
+            // Animer la disparition
+            setTimeout(() => {
+                notification.style.transform = 'translateX(-50%) translateY(-100px)';
+                notification.style.opacity = '0';
+            }, 3000);
+            
+            // Supprimer l'élément
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.parentNode.removeChild(notification);
+                }
+            }, 3500);
+        };
+
+        // ===============================================
+        // GESTION DES ÉVÉNEMENTS ET INTERACTIONS ULTRA-AVANCÉES
+        // ===============================================
+        
+        // Empêcher le clic droit pour maintenir l'immersion ultra-magique
+        document.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+            showUltraNotification('✨ Profitez de la magie sans interruption ! ✨');
+        });
+        
+        // Empêcher les raccourcis clavier qui pourraient perturber l'expérience
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'F5' || (e.ctrlKey && e.key === 'r')) {
+                if (countdownActive) {
+                    e.preventDefault();
+                    showUltraNotification('🎉 Veuillez patienter pendant la célébration magique ! 🎉');
+                }
+            }
+            
+            // Raccourcis magiques secrets
+            if (e.key === ' ') {
+                e.preventDefault();
+                createMagicParticles();
+                playUltraSound('magic', 'surprise');
+            }
+        });
+
+        // Gestion du redimensionnement ultra-responsive
+        window.addEventListener('resize', () => {
+            
+            // Recalculer les positions des éléments si nécessaire
+        });
+
+        // Gestion des mouvements de souris pour des effets magiques
+        let mouseTrail = [];
+        document.addEventListener('mousemove', (e) => {
+            // Créer une traînée magique de la souris (effet subtil)
+            if (Math.random() < 0.1) { // 10% de chance à chaque mouvement
+                const trail = document.createElement('div');
+                trail.style.position = 'fixed';
+                trail.style.left = e.clientX + 'px';
+                trail.style.top = e.clientY + 'px';
+                trail.style.width = '4px';
+                trail.style.height = '4px';
+                trail.style.backgroundColor = ultraColors[Math.floor(Math.random() * ultraColors.length)];
+                trail.style.borderRadius = '50%';
+                trail.style.pointerEvents = 'none';
+                trail.style.zIndex = '1';
+                trail.style.opacity = '0.6';
+                trail.style.animation = 'trailFade 1s ease-out forwards';
+                
+                document.body.appendChild(trail);
+                
+                setTimeout(() => {
+                    if (trail.parentNode) {
+                        trail.parentNode.removeChild(trail);
+                    }
+                }, 1000);
+            }
+        });
+
+        // Animation pour la traînée de souris
+        const trailStyle = document.createElement('style');
+        trailStyle.textContent = `
+            @keyframes trailFade {
+                0% {
+                    transform: scale(1);
+                    opacity: 0.6;
+                }
+                100% {
+                    transform: scale(0);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(trailStyle);
+
+        // ===============================================
+        // DÉMARRAGE DE L'APPLICATION ULTRA-SPECTACULAIRE
+        // ===============================================
+        
+        // Initialiser la page une fois le DOM chargé
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            
+            
+            // Précharger les effets
+            setTimeout(() => {
+                // Démarrer le compte à rebours ultra-spectaculaire
+                startUltraCountdown();
+            }, 500);
+        });
+
+        // Message de bienvenue ultra-détaillé dans la console pour les développeurs curieux
+        console.log(`
+        🎉✨🌟 JOYEUX ANNIVERSAIRE MERLINE ! 🌟✨🎉
+        
+        Cette page ultra-spectaculaire a été créée avec passion en HTML5, CSS3 et JavaScript vanilla.
+        
+        🎨 Fonctionnalités Ultra-Avancées incluses :
+        🔸 Animation de compte à rebours 3-2-1 avec effets visuels uniques
+        🔸 Titre scintillant arc-en-ciel avec étoiles brillantes magiques
+        🔸 Confettis tombants ultra-colorés en continu
+        🔸 Gâteau avec bougies qui s'allument progressivement + étincelles
+        🔸 Vœux interactifs avec modals ultra-stylées
+        🔸 Bouton de partage avec explosion spectaculaire de confettis
+        🔸 Particules magiques flottantes en arrière-plan
+        🔸 Effets sonores simulés ultra-réalistes
+        🔸 Traînée magique de souris interactive
+        🔸 Notifications ultra-stylées
+        🔸 Design 100% responsive ultra-adaptatif
+        🔸 Interface unique sans scroll pour une immersion totale
+        🔸 15 couleurs ultra-vibrantes dans une palette harmonieuse
+        🔸 Animations CSS avancées avec cubic-bezier personnalisées
+        🔸 Effets de particules et ondes de choc
+        🔸 Système de raccourcis magiques secrets
+        
+        🎂❤️ Profitez de cette journée ultra-spéciale, Merline ! ❤️🎂
+        
+        💫 Appuyez sur ESPACE pour créer de la magie supplémentaire ! 💫
+        `);
+
+        // ===============================================
+        // EASTER EGGS ET FONCTIONNALITÉS SECRÈTES
+        // ===============================================
+        
+        // Séquence de touches secrète pour activer le mode "Ultra-Magie"
+        let secretSequence = [];
+        const secretCode = ['m', 'e', 'r', 'l', 'i', 'n', 'e'];
+        
+        document.addEventListener('keydown', (e) => {
+            secretSequence.push(e.key.toLowerCase());
+            if (secretSequence.length > secretCode.length) {
+                secretSequence.shift();
+            }
+            
+            if (JSON.stringify(secretSequence) === JSON.stringify(secretCode)) {
+                activateUltraMagicMode();
+                secretSequence = [];
+            }
+        });
+        
+        const activateUltraMagicMode = () => {
+            showUltraNotification('🌟✨ MODE ULTRA-MAGIE ACTIVÉ ! ✨🌟');
+            playUltraSound('magic', 'légendaire');
+            
+            // Créer une explosion de magie sur toute la page
+            for (let i = 0; i < 50; i++) {
+                setTimeout(() => {
+                    createMagicParticles();
+                }, i * 100);
+            }
+            
+            // Changer temporairement les couleurs de fond
+            document.body.style.animation = 'rainbowShift 2s ease infinite';
+        };
+    </script>
+
+<script>
+// Enhance countdown with flash effect instead of sound
+(function(){
+  var countEl = document.getElementById('count');
+  var flash = document.getElementById('flash');
+  if(countEl){
+    var observer = new MutationObserver(function(){
+      flash.classList.remove('flash-active');
+      void flash.offsetWidth;
+      flash.classList.add('flash-active');
+    });
+    observer.observe(countEl, { childList: true });
+  }
+})();
+</script>
+
+</body>
+</html>
